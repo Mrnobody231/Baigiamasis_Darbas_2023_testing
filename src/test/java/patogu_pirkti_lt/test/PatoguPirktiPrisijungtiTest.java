@@ -21,7 +21,7 @@ public class PatoguPirktiPrisijungtiTest extends TestBase{
         PatoguPirktiPrisijungtiPage.clickOnPrisijungtiButton();
         PatoguPirktiPrisijungtiPage.writeEmail(email);
         PatoguPirktiPrisijungtiPage.writePassword(password);
-//        PatoguPirktiPrisijungtiPage.clickOnPrisijungti();
+        PatoguPirktiPrisijungtiPage.clickOnPrisijungti();
 
     }
 }

@@ -1,6 +1,6 @@
 package patogu_pirkti_lt.pages;
 
-public class PatoguPirktiPrisijungtiPage {
+public class PatoguPirktiPrisijungtiPositivePage {
     public static void openChrome(String url) {
         Common.setUpChrome();
         Common.openUrl(url);

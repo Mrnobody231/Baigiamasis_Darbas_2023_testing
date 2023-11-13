@@ -26,4 +26,15 @@ public class PatoguPirktiRegistracijaPage {
     public static void repeatPassword(String repeatPassword) {
         Common.sendKeysToElement(Locator.PatoguPirkti.Registracija.repeatPassword,repeatPassword);
     }
+    public static void clickOnRecaptcha(){
+        Common.waitElementToClick(Locator.PatoguPirkti.Registracija.clickRecaptcha, 5);
+    }
+
+    public static void clickOnRegistruotis() {
+        Common.clickOnElement(Locator.PatoguPirkti.Registracija.clickRegistruotisButton);
+    }
+
+    public static String readMessageCheckedValue() {
+        return Common.getTextFromElement(Locator.PatoguPirkti.Registracija.paragraphCheckedValue);
+    }
 }

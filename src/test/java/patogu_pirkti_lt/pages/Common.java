@@ -1,6 +1,7 @@
 package patogu_pirkti_lt.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,7 +42,7 @@ public class Common {
     public static String getTextFromElement(By locator) {
         return getElement(locator).getText();
     }
-    public static void waitForCookiesBeLocated(By locator, int seconds) {
+    public static void waitElementWhenVisible(By locator, int seconds) throws TimeoutException {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }

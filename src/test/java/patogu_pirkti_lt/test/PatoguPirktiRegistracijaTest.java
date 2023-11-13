@@ -14,8 +14,15 @@ public class PatoguPirktiRegistracijaTest extends TestBase {
 
     @Test
     public void testClickOnRegistracijaButton() {
+        String email = "andruskevic.e@gmail.com";
+        String password = "Testing2023QA";
+        String repeatPassword = "Testing2023QA";
         String actualResult;
 
         PatoguPirktiRegistracijaPage.waitForCookies();
+        PatoguPirktiRegistracijaPage.clickOnPrisijungtiButton();
+        PatoguPirktiRegistracijaPage.writeEmail(email);
+        PatoguPirktiRegistracijaPage.writePassword(password);
+        PatoguPirktiRegistracijaPage.repeatPassword(repeatPassword);
     }
 }

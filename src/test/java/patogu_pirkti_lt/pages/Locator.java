@@ -23,6 +23,7 @@ public class Locator {
             public static By writeEmail = By.xpath("//input[@id='email']");
             public static By writePassword = By.xpath("//input[@id='pass']");
             public static By clickOnPrisijungti = By.xpath("//button[@id='send2']");
+            public static By paragraphCheckedValue = By.xpath("//h1[contains(text(),'Mano paskyra')]");
         }
     }
 }

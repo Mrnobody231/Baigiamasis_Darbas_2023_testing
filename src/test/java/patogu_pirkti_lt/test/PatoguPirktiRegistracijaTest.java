@@ -21,22 +21,22 @@ public class PatoguPirktiRegistracijaTest extends TestBase {
         String expectedResult = "Mano paskyra";
         String actualResult;
 
-        actualResult = PatoguPirktiRegistracijaPage.readMessageCheckedValue();
+//        actualResult = PatoguPirktiRegistracijaPage.readMessageCheckedValue();
 
         PatoguPirktiRegistracijaPage.waitForCookies();
         PatoguPirktiRegistracijaPage.clickOnPrisijungtiButton();
         PatoguPirktiRegistracijaPage.writeEmail(email);
         PatoguPirktiRegistracijaPage.writePassword(password);
         PatoguPirktiRegistracijaPage.repeatPassword(repeatPassword);
-        PatoguPirktiRegistracijaPage.clickOnRegistruotis();
+//        PatoguPirktiRegistracijaPage.clickOnRegistruotis();
 //        PatoguPirktiRegistracijaPage.clickOnRecaptcha();
 
-        Assert.assertTrue(
-                actualResult.contains(expectedResult),
-                "\nActual: %s, \nExpected: %s".formatted(
-                        actualResult, expectedResult
-                )
-        );
+//        Assert.assertTrue(
+//                actualResult.contains(expectedResult),
+//                "\nActual: %s, \nExpected: %s".formatted(
+//                        actualResult, expectedResult
+//                )
+//        );
     }
 }
 

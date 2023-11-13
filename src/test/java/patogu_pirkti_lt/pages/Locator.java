@@ -17,5 +17,12 @@ public class Locator {
                     "'Registruotis')]");
             public static By paragraphCheckedValue = By.xpath("//h1[contains(text(),'Mano paskyra')]");
         }
+
+        public static class Prisijungti {
+            public static By headerPrisijungtiButton = By.xpath("//a[contains(text(),'Prisijungti')]");
+            public static By writeEmail = By.xpath("//input[@id='email']");
+            public static By writePassword = By.xpath("//input[@id='pass']");
+            public static By clickOnPrisijungti = By.xpath("//button[@id='send2']");
+        }
     }
 }

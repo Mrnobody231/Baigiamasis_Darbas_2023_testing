@@ -1,4 +1,48 @@
 package patogu_pirkti_lt.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import patogu_pirkti_lt.utilities.Driver;
+
+import java.time.Duration;
+import java.util.List;
+
 public class Common {
+    public static void setUpChrome() {
+        Driver.setChromeDriver();
+    }
+
+    public static void openUrl(String url) {
+        Driver.getDriver().get(url);
+    }
+    public static void quitDriver() {
+        Driver.quitDriver();
+    }
+
+
+    private static WebElement getElement(By locator) {
+        return Driver.getDriver().findElement(locator);
+    }
+
+    public static void clickOnElement(By locator) {
+        getElement(locator).click();
+    }
+
+    private static List<WebElement> getElements(By locator) {
+        return Driver.getDriver().findElements(locator);
+    }
+
+    public static void sendKeysToElement(By locator, String text) {
+        getElement(locator).sendKeys(text);
+    }
+
+    public static String getTextFromElement(By locator) {
+        return getElement(locator).getText();
+    }
+    public static void waitForCookiesBeLocated(By locator, int seconds) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
 }

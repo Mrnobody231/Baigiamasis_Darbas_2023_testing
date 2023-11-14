@@ -1,6 +1,7 @@
 package patogu_pirkti_lt.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -64,5 +65,29 @@ public class Common {
                 .moveToElement(getElement(locator))
                 .click()
                 .perform();
+    }
+
+    public static boolean clickOnCheckBoxWhenAvailable(By locator, int seconds) throws InterruptedException {
+        for (int i : new int[seconds * 2]) {
+            Thread.sleep(500);
+            if (getElement(locator).isSelected()) return true;
+            clickWithActions(locator);
+        }
+        return false;
+    }
+
+
+    public static void waitJavaScriptLoadComplete(int seconds) throws InterruptedException {
+        Thread.sleep(1000);
+        for (int i : new int[seconds * 2]) {
+            Thread.sleep(500);
+            JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+
+            System.out.println(js.executeScript("return document.readyState").toString());
+
+            if (js.executeScript("return document.readyState").toString().equals("complete")) {
+                return;
+            }
+        }
     }
 }

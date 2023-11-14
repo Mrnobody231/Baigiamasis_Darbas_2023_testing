@@ -33,6 +33,16 @@ public class Locator {
                     "and @value='42553']");
             public static By clickCheckBoxTurimeSandelyje = By.xpath("//input[@type='checkbox' " +
                     "and @value='41449']");
+            public static By writeInBoxAlmaLittera = By.xpath("//input[@type='text' " +
+                    "and @placeholder='Ieškoti']");
+            public static By clickCheckBoxAlmaLittera = By.xpath("//input[@type='checkbox' " +
+                    "and @value='33785']");
+            public static By readTextOfBooks = By.xpath("(//div[@class='col-md-2 page-counter " +
+                    "text-left pull-left'])[1]");
+
+            public static By clickDeclineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
+                    "BodyButtonDecline']");
+
         }
     }
 }

@@ -18,6 +18,8 @@ public class PatoguApsipirktiIspardavimasCheckBoxesTest extends TestBase{
         String expectecAmountOfBooks = "Rasta: 14";
 
         PatoguApsipirktiIspardavimasCheckBoxesPage.clickIspardavimasButton();
+        PatoguApsipirktiIspardavimasCheckBoxesPage.clickCheckBoxGrozineLiteratura();
+        PatoguApsipirktiIspardavimasCheckBoxesPage.clickCheckBoxTurimeSandelyje();
 
     }
 }

@@ -29,6 +29,10 @@ public class Locator {
         public static class Ispardavimas {
 
             public static By clickIspardavimasButton = By.xpath("//a[@title='Knygų išpardavimas']");
+            public static By clickCheckBoxGrozineLiteratura = By.xpath("//input[@type='checkbox' " +
+                    "and @value='42553']");
+            public static By clickCheckBoxTurimeSandelyje = By.xpath("//input[@type='checkbox' " +
+                    "and @value='41449']");
         }
     }
 }

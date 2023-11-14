@@ -36,6 +36,11 @@ public class Locator {
 
         public static class Krepselis {
             public static By inputSearchBox = By.xpath("//input[@id='search']");
+            public static By clickSearchBox = By.xpath("//button[@type='submit']");
+            public static By clickOnButtonKrepselis = By.xpath("(//a[contains(text(),'Į krepšelį')])[2]");
+            public static By clickDeclineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
+                    "BodyButtonDecline']");
+            public static By krepselisMessageShow = By.xpath("//div[@id='myModalLabel']");
         }
     }
 }

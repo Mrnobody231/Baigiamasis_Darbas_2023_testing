@@ -90,4 +90,12 @@ public class Common {
             }
         }
     }
+
+    public static boolean clickOnKrepselisWhenAvailable(By locator, int seconds) {
+        for (int i : new int[seconds]) {
+            if (getElement(locator).isSelected()) return true;
+            clickWithActions(locator);
+        }
+        return false;
+    }
 }

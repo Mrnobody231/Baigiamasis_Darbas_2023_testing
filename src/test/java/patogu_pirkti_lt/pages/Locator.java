@@ -25,5 +25,10 @@ public class Locator {
             public static By clickOnPrisijungti = By.xpath("//button[@id='send2']");
             public static By paragraphCheckedValue = By.xpath("//h1[contains(text(),'Mano paskyra')]");
         }
+
+        public static class Ispardavimas {
+
+            public static By clickIspardavimasButton = By.xpath("//a[@title='Knygų išpardavimas']");
+        }
     }
 }

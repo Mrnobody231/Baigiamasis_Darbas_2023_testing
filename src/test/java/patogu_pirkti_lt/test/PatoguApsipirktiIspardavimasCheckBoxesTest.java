@@ -26,7 +26,7 @@ public class PatoguApsipirktiIspardavimasCheckBoxesTest extends TestBase {
         PatoguApsipirktiIspardavimasCheckBoxesPage.clickCheckBoxTurimeSandelyje();
         PatoguApsipirktiIspardavimasCheckBoxesPage.writeTextInCheckBox(leidykla);
         PatoguApsipirktiIspardavimasCheckBoxesPage.selectCheckBoxLeidykla();
-//        PatoguApsipirktiIspardavimasCheckBoxesPage.waitForAmountOfBooks();
+
 
         actualAmountOfBooks = PatoguApsipirktiIspardavimasCheckBoxesPage.findAmountOfBooks();
 

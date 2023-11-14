@@ -19,7 +19,7 @@ public class PatoguApsipirktiIspardavimasCheckBoxesPage {
 
     }
 
-    public static void writeTextInCheckBox(String leidykla)  {
+    public static void writeTextInCheckBox(String leidykla) {
         try {
             Common.waitJavaScriptLoadComplete(5);
         } catch (InterruptedException e) {
@@ -34,7 +34,7 @@ public class PatoguApsipirktiIspardavimasCheckBoxesPage {
 
     public static String findAmountOfBooks() {
         try {
-            Common.waitJavaScriptLoadComplete( 5);
+            Common.waitJavaScriptLoadComplete(5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

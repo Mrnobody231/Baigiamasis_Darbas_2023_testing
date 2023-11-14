@@ -7,7 +7,7 @@ public class PatoguPirktiPrisijungtiNegativePage {
         Common.openUrl(url);
     }
     public static void waitForCookies() {
-        Common.waitElementWhenVisible(Locator.PatoguPirkti.Registracija.declineCookies, 5);
+        Common.waitElementWhenVisible(Locator.PatoguPirkti.Prisijungti.declineCookies, 5);
     }
 
     public static void clickOnPrisijungtiButton() {

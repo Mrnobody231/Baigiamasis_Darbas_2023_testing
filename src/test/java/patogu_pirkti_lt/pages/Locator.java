@@ -11,6 +11,8 @@ public class Locator {
             public static By writePassword = By.xpath("//input[@id='pass']");
             public static By clickOnPrisijungti = By.xpath("//button[@id='send2']");
             public static By paragraphCheckedValue = By.xpath("//h1[contains(text(),'Mano paskyra')]");
+            public static By declineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
+                    "BodyButtonDecline']");
         }
 
         public static class Ispardavimas {
@@ -30,6 +32,10 @@ public class Locator {
             public static By clickDeclineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
                     "BodyButtonDecline']");
 
+        }
+
+        public static class Krepselis {
+            public static By inputSearchBox = By.xpath("//input[@id='search']");
         }
     }
 }

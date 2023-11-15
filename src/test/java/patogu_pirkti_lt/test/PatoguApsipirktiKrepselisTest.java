@@ -33,6 +33,34 @@ public class PatoguApsipirktiKrepselisTest extends TestBase {
                 actualResult, expectedResult
         );
     }
+
+    @Test
+    public static void testIstrintiIsKrepselio() {
+        String autorius = "George Orwell";
+        String expectedResult = "Prekių krepšelis yra tuščias";
+        String actualResult;
+
+        PatoguApsipirktiKrepselisPage.writeInSearchBox(autorius);
+        PatoguApsipirktiKrepselisPage.clickOnSearchBox();
+        PatoguApsipirktiKrepselisPage.declineCookies();
+        PatoguApsipirktiKrepselisPage.addToKrepselis();
+        PatoguApsipirktiKrepselisPage.clickPirktiKrepselioMessage();
+        PatoguApsipirktiKrepselisPage.deleteBookFromList();
+
+        actualResult = PatoguApsipirktiKrepselisPage.checkDeletedMessage();
+
+        PatoguApsipirktiKrepselisPage.returnToMainPage();
+
+
+        Assert.assertTrue(
+                actualResult.contains(expectedResult),
+                "\nActual: %s, \nExpected: %s".formatted(
+                        actualResult, expectedResult
+                )
+        );
+    }
 }
+
+
 
 

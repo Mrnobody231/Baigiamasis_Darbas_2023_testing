@@ -42,6 +42,13 @@ public class Locator {
                     "BodyButtonDecline']");
             public static By krepselisMessageShow = By.xpath("//div[@id='myModalLabel']");
             public static By closePagePrekeIdetaIKrepseli = By.xpath("(//button[@type='button'])[3]");
+            public static By clickPirktiOnKrepselioMessage = By.xpath("(//a[contains(text(),'Pirkti')" +
+                    "])[2]");
+            public static By clickPasalintiIsKrepselio = By.xpath("//a[@onclick='removeFromCart(this, " +
+                    "product_tracking_data_remove_19189)']");
+            public static By readDeleteMessage = By.xpath("//h1[contains(text(), 'Prekių krepšelis" +
+                    " yra tuščias')]");
+            public static By clickGriztiButton = By.xpath("//a[contains(text(), 'Grįžti')]");
         }
     }
 }

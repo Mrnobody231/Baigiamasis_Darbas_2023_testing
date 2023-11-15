@@ -50,4 +50,8 @@ public class PatoguApsipirktiManoNoruSarasasPage {
         }
         Common.clickWithActions(Locator.PatoguPirkti.NoruSarasas.clickMessageNoruSarasas);
     }
+
+    public static String bookIsInManoSarasas() {
+        return Common.getTextFromElement(Locator.PatoguPirkti.NoruSarasas.readTextOfBook);
+    }
 }

@@ -58,7 +58,9 @@ public class Locator {
             public static By clickSearchBox = By.xpath("//button[@type='submit']");
             public static By clickOnBook = By.xpath("(//a[contains(text(),'Gyvulių ūkis')])[1]");
             public static By clickINoriuSarasas = By.xpath("(//a[contains(text(),'Į norų sąrašą')])[2]");
-            public static By clickMessageNoruSarasas = By.xpath("(//a[contains(text(),'norų sąrašą')])[3]");
+            public static By clickMessageNoruSarasas = By.xpath("(//a[contains(text(),'norų sąrašą')])" +
+                    "[3]");
+            public static By readTextOfBook = By.xpath("//a[contains(text(),'Gyvulių ūkis')]");
         }
     }
 }

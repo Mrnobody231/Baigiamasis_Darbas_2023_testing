@@ -1,5 +1,6 @@
 package patogu_pirkti_lt.test;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import patogu_pirkti_lt.pages.PatoguApsipirktiManoNoruSarasasPage;
@@ -16,6 +17,8 @@ public class PatoguApsipirktiManoNoruSarasasTest extends TestBase {
         String email = "andruskevic.e@gmail.com";
         String password = "Testing2023QA";
         String autorius = "George Orwell";
+        String expectedResult = "Gyvulių ūkis";
+        String actualResult;
 
         PatoguApsipirktiManoNoruSarasasPage.clickOnPrisijungtiButton();
         PatoguApsipirktiManoNoruSarasasPage.waitForCookies();
@@ -28,5 +31,12 @@ public class PatoguApsipirktiManoNoruSarasasTest extends TestBase {
         PatoguApsipirktiManoNoruSarasasPage.addToNoriuSarasas();
         PatoguApsipirktiManoNoruSarasasPage.clickOnMessageNoruSarasa();
 
+        actualResult = PatoguApsipirktiManoNoruSarasasPage.bookIsInManoSarasas();
+
+
+        Assert.assertEquals(
+                actualResult, expectedResult
+        );
     }
 }
+

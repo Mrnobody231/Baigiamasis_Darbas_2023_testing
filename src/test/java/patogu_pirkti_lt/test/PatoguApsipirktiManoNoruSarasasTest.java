@@ -33,6 +33,8 @@ public class PatoguApsipirktiManoNoruSarasasTest extends TestBase {
 
         actualResult = PatoguApsipirktiManoNoruSarasasPage.bookIsInManoSarasas();
 
+        PatoguApsipirktiManoNoruSarasasPage.clickPasalintiButton();
+        PatoguApsipirktiManoNoruSarasasPage.clickMessagePasalintiIsNoruSaraso();
 
         Assert.assertEquals(
                 actualResult, expectedResult

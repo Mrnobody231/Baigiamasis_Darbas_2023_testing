@@ -44,7 +44,7 @@ public class PatoguApsipirktiManoNoruSarasasPage {
 
     public static void clickOnMessageNoruSarasa() throws InterruptedException {
         try {
-            Common.waitJavaScriptLoadComplete(2);
+            Common.waitJavaScriptLoadComplete(6);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -53,5 +53,13 @@ public class PatoguApsipirktiManoNoruSarasasPage {
 
     public static String bookIsInManoSarasas() {
         return Common.getTextFromElement(Locator.PatoguPirkti.NoruSarasas.readTextOfBook);
+    }
+
+    public static void clickPasalintiButton() {
+        Common.clickOnElement(Locator.PatoguPirkti.NoruSarasas.clickPasalinti);
+    }
+
+    public static void clickMessagePasalintiIsNoruSaraso() {
+        Common.acceptNoruSarasa();
     }
 }

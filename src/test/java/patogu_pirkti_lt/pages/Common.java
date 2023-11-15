@@ -98,6 +98,9 @@ public class Common {
     }
 
     public static void acceptNoruSarasa() {
-        Driver.getDriver().switchTo().activeElement().click();
+        Driver.getDriver().switchTo().alert().accept();
+    }
+    public static String getTextFromAlertBox() {
+        return Driver.getDriver().switchTo().alert().getText();
     }
 }

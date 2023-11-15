@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test PatoguPirkti" >
+    <test name="Idejimas ir Istrinimas is Krepselio">
+        <classes>
+            <class name="patogu_pirkti_lt.test.PatoguApsipirktiKrepselisTest"/>
+        </classes>
+    </test>
+</suite>

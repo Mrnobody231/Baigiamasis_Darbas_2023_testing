@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test PatoguPirkti" >
-    <test name="Idejimas ir Istrinimas is Krepselio">
+    <test name="All tests written">
         <classes>
+            <class name="patogu_pirkti_lt.test.PatoguPirktiPrisijungtiPositiveTest"/>
+            <class name="patogu_pirkti_lt.test.PatoguPirktiPrisijungtiNegativeTest"/>
+            <class name="patogu_pirkti_lt.test.PatoguApsipirktiIspardavimasCheckBoxesTest"/>
             <class name="patogu_pirkti_lt.test.PatoguApsipirktiKrepselisTest"/>
+            <class name="patogu_pirkti_lt.test.PatoguApsipirktiManoNoruSarasasTest"/>
         </classes>
     </test>
 </suite>

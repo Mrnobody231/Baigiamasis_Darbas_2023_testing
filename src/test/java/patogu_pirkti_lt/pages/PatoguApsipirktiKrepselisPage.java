@@ -27,4 +27,8 @@ public class PatoguApsipirktiKrepselisPage {
         Common.waitElementWhenVisible(Locator.PatoguPirkti.Krepselis.krepselisMessageShow, 6);
         return Common.getTextFromElement(Locator.PatoguPirkti.Krepselis.krepselisMessageShow);
     }
+
+    public static void clickClosePrekeIdetaIKrepseli() {
+        Common.clickWithActions(Locator.PatoguPirkti.Krepselis.closePagePrekeIdetaIKrepseli);
+    }
 }

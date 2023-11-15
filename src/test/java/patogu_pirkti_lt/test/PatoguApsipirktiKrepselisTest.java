@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import patogu_pirkti_lt.pages.PatoguApsipirktiKrepselisPage;
 
 public class PatoguApsipirktiKrepselisTest extends TestBase {
+
     @BeforeMethod
     @Override
     public void setUp() {
@@ -13,7 +14,6 @@ public class PatoguApsipirktiKrepselisTest extends TestBase {
     }
 
     @Test
-
     public static void testIdetiIKrepseli() {
         String autorius = "George Orwell";
         String expectedResult = "Prekė įdėta į krepšelį";
@@ -26,9 +26,13 @@ public class PatoguApsipirktiKrepselisTest extends TestBase {
 
         actualResult = PatoguApsipirktiKrepselisPage.checkMessageText();
 
+        PatoguApsipirktiKrepselisPage.clickClosePrekeIdetaIKrepseli();
+
+
         Assert.assertEquals(
                 actualResult, expectedResult
         );
     }
 }
+
 

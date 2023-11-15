@@ -41,6 +41,7 @@ public class Locator {
             public static By clickDeclineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
                     "BodyButtonDecline']");
             public static By krepselisMessageShow = By.xpath("//div[@id='myModalLabel']");
+            public static By closePagePrekeIdetaIKrepseli = By.xpath("(//button[@type='button'])[3]");
         }
     }
 }

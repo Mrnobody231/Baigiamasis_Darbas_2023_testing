@@ -83,8 +83,6 @@ public class Common {
             Thread.sleep(500);
             JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 
-            System.out.println(js.executeScript("return document.readyState").toString());
-
             if (js.executeScript("return document.readyState").toString().equals("complete")) {
                 return;
             }
@@ -97,5 +95,9 @@ public class Common {
             clickWithActions(locator);
         }
         return false;
+    }
+
+    public static void acceptNoruSarasa() {
+        Driver.getDriver().switchTo().activeElement().click();
     }
 }

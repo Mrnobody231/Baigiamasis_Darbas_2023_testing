@@ -11,8 +11,8 @@ public class Locator {
             public static By writePassword = By.xpath("//input[@id='pass']");
             public static By clickOnPrisijungti = By.xpath("//button[@id='send2']");
             public static By paragraphCheckedValue = By.xpath("//h1[contains(text(),'Mano paskyra')]");
-            public static By declineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
-                    "BodyButtonDecline']");
+            public static By declineCookies = By.xpath("//button[@id='CybotCookiebotDialogBody" +
+                    "ButtonDecline']");
         }
 
         public static class Ispardavimas {
@@ -49,6 +49,16 @@ public class Locator {
             public static By readDeleteMessage = By.xpath("//h1[contains(text(), 'Prekių krepšelis" +
                     " yra tuščias')]");
             public static By clickGriztiButton = By.xpath("//a[contains(text(), 'Grįžti')]");
+        }
+
+        public static class NoruSarasas {
+            public static By declineCookiesButton = By.xpath("//button[@id='CybotCookiebotDialogBody" +
+                    "ButtonDecline']");
+            public static By inputSearchBox = By.xpath("//input[@id='search']");
+            public static By clickSearchBox = By.xpath("//button[@type='submit']");
+            public static By clickOnBook = By.xpath("(//a[contains(text(),'Gyvulių ūkis')])[1]");
+            public static By clickINoriuSarasas = By.xpath("(//a[contains(text(),'Į norų sąrašą')])[2]");
+            public static By clickMessageNoruSarasas = By.xpath("(//a[contains(text(),'norų sąrašą')])[3]");
         }
     }
 }

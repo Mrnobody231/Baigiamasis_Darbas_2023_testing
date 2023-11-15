@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import patogu_pirkti_lt.utilities.Driver;
 
 import java.time.Duration;
-import java.util.List;
+
 
 public class Common {
     public static void setUpChrome() {
@@ -34,10 +34,6 @@ public class Common {
         getElement(locator).click();
     }
 
-    private static List<WebElement> getElements(By locator) {
-        return Driver.getDriver().findElements(locator);
-    }
-
     public static void sendKeysToElement(By locator, String text) {
         getElement(locator).sendKeys(text);
     }
@@ -49,11 +45,6 @@ public class Common {
     public static void waitElementWhenVisible(By locator, int seconds) throws TimeoutException {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-
-    public static void waitElementToClick(By locator, int seconds) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
-        wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     private static Actions getActions() {
@@ -99,8 +90,5 @@ public class Common {
 
     public static void acceptNoruSarasa() {
         Driver.getDriver().switchTo().alert().accept();
-    }
-    public static String getTextFromAlertBox() {
-        return Driver.getDriver().switchTo().alert().getText();
     }
 }

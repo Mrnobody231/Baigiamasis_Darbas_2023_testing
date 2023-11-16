@@ -28,11 +28,13 @@ public class PatoguApsipirktiManoNoruSarasasTest extends TestBase {
         PatoguApsipirktiManoNoruSarasasPage.writeInSearchBox(autorius);
         PatoguApsipirktiManoNoruSarasasPage.clickOnSearchBox();
         PatoguApsipirktiManoNoruSarasasPage.clickOnBook();
-        PatoguApsipirktiManoNoruSarasasPage.addToNoriuSarasas();
+        PatoguApsipirktiManoNoruSarasasPage.addToNoruSarasas();
+        PatoguApsipirktiManoNoruSarasasPage.waitOnMessageNoruSarasa();
         PatoguApsipirktiManoNoruSarasasPage.clickOnMessageNoruSarasa();
 
         actualResult = PatoguApsipirktiManoNoruSarasasPage.bookIsInManoSarasas();
 
+        PatoguApsipirktiManoNoruSarasasPage.waitTillBookLocated();
         PatoguApsipirktiManoNoruSarasasPage.clickPasalintiButton();
         PatoguApsipirktiManoNoruSarasasPage.clickMessagePasalintiIsNoruSaraso();
 

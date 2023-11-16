@@ -38,13 +38,17 @@ public class PatoguApsipirktiManoNoruSarasasPage {
         Common.clickWithActions(Locator.PatoguPirkti.NoruSarasas.clickOnBook);
     }
 
-    public static void addToNoriuSarasas() {
-        Common.clickWithActions(Locator.PatoguPirkti.NoruSarasas.clickINoriuSarasas);
+    public static void addToNoruSarasas() {
+        Common.clickWithActions(Locator.PatoguPirkti.NoruSarasas.clickINoruSarasas);
     }
 
-    public static void clickOnMessageNoruSarasa() throws InterruptedException {
+    public static void waitOnMessageNoruSarasa() {
+        Common.waitElementWhenVisible(Locator.PatoguPirkti.NoruSarasas.clickMessageNoruSarasas, 8);
+    }
+
+    public static void clickOnMessageNoruSarasa()  {
         try {
-            Common.waitJavaScriptLoadComplete(6);
+            Common.waitJavaScriptLoadComplete(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -55,11 +59,15 @@ public class PatoguApsipirktiManoNoruSarasasPage {
         return Common.getTextFromElement(Locator.PatoguPirkti.NoruSarasas.readTextOfBook);
     }
 
+    public static void waitTillBookLocated() {
+        Common.waitElementWhenVisible(Locator.PatoguPirkti.NoruSarasas.clickPasalinti, 4);
+    }
+
     public static void clickPasalintiButton() {
         Common.clickOnElement(Locator.PatoguPirkti.NoruSarasas.clickPasalinti);
     }
 
     public static void clickMessagePasalintiIsNoruSaraso() {
-        Common.acceptNoruSarasa();
+        Common.acceptAlert();
     }
 }

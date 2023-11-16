@@ -9,7 +9,7 @@
     * In the field "Password" write : Testing2023QA
     * Click on button "Prisijungti"
 
-      Expected Result: Should be given "Mano paskyra"
+      Expected Result: Should be seen message "Mano paskyra"
 <br>
 
 

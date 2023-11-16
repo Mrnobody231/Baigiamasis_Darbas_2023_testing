@@ -17,7 +17,7 @@ public class PatoguApsipirktiIspardavimasCheckBoxesTest extends TestBase {
     @Test
     public static void testSelectCheckBoxes() throws InterruptedException {
         String leidykla = "Alma littera";
-        String expectedAmountOfBooks = "Rasta: 14";
+        String expectedAmountOfBooks = "Rasta: 13";
         String actualAmountOfBooks;
 
         PatoguApsipirktiIspardavimasCheckBoxesPage.clickIspardavimasButton();

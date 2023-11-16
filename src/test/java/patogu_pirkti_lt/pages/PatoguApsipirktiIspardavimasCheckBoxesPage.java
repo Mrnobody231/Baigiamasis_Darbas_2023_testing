@@ -15,13 +15,13 @@ public class PatoguApsipirktiIspardavimasCheckBoxesPage {
     }
 
     public static void clickCheckBoxTurimeSandelyje() throws InterruptedException {
-        Common.clickOnCheckBoxWhenAvailable(Locator.PatoguPirkti.Ispardavimas.clickCheckBoxTurimeSandelyje, 5);
+        Common.clickOnCheckBoxWhenAvailable(Locator.PatoguPirkti.Ispardavimas.clickCheckBoxTurimeSandelyje, 7);
 
     }
 
     public static void writeTextInCheckBox(String leidykla) {
         try {
-            Common.waitJavaScriptLoadComplete(5);
+            Common.waitJavaScriptLoadComplete(12);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

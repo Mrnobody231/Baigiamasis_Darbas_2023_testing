@@ -18,7 +18,7 @@ public class PatoguPirktiPrisijungtiNegativeTest extends TestBase {
     public void testPrisijungtiNegative() {
         String email = "andruskevic.e@gmail.com";
         String password = "Testing2023";
-        String expectedResult = "Mano paskyra";
+        String expectedResult = "Neteisingas prisijungimo vardas arba slaptažodis.";
         String actualResult;
 
         PatoguPirktiPrisijungtiNegativePage.waitForCookies();
@@ -28,7 +28,7 @@ public class PatoguPirktiPrisijungtiNegativeTest extends TestBase {
         PatoguPirktiPrisijungtiNegativePage.clickOnPrisijungti();
         PatoguPirktiPrisijungtiNegativePage.readMessageCheckedValue();
 
-        actualResult = PatoguPirktiPrisijungtiPositivePage.readMessageCheckedValue();
+        actualResult = PatoguPirktiPrisijungtiPositivePage.readMessageCheckedValueNegative();
 
         Assert.assertTrue(
                 actualResult.contains(expectedResult),

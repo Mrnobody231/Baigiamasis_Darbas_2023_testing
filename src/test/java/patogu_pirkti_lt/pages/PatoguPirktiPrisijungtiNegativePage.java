@@ -6,6 +6,7 @@ public class PatoguPirktiPrisijungtiNegativePage {
         Common.setUpChrome();
         Common.openUrl(url);
     }
+
     public static void waitForCookies() {
         Common.waitElementWhenVisible(Locator.PatoguPirkti.Prisijungti.declineCookies, 5);
     }
@@ -27,6 +28,6 @@ public class PatoguPirktiPrisijungtiNegativePage {
     }
 
     public static String readMessageCheckedValue() {
-        return Common.getTextFromElement(Locator.PatoguPirkti.Prisijungti.paragraphCheckedValue);
+        return Common.getTextFromElement(Locator.PatoguPirkti.Prisijungti.checkedValueNegative);
     }
 }

@@ -25,7 +25,7 @@ public class PatoguPirktiPrisijungtiPositiveTest extends TestBase {
         PatoguPirktiPrisijungtiPositivePage.writePassword(password);
         PatoguPirktiPrisijungtiPositivePage.clickOnPrisijungti();
 
-        actualResult = PatoguPirktiPrisijungtiPositivePage.readMessageCheckedValue();
+        actualResult = PatoguPirktiPrisijungtiPositivePage.readMessageCheckedValuePositive();
 
 
         Assert.assertTrue(

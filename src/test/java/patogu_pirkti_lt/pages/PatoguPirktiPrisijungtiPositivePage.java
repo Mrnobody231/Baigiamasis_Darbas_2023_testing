@@ -26,9 +26,11 @@ public class PatoguPirktiPrisijungtiPositivePage {
         Common.clickOnElement(Locator.PatoguPirkti.Prisijungti.clickOnPrisijungti);
     }
 
-    public static String readMessageCheckedValue() {
-        return Common.getTextFromElement(Locator.PatoguPirkti.Prisijungti.paragraphCheckedValue);
+    public static String readMessageCheckedValuePositive() {
+        return Common.getTextFromElement(Locator.PatoguPirkti.Prisijungti.paragraphCheckedValuePositive);
     }
 
-
+    public static String readMessageCheckedValueNegative() {
+        return Common.getTextFromElement(Locator.PatoguPirkti.Prisijungti.checkedValueNegative);
+    }
 }

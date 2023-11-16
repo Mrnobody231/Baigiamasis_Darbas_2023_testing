@@ -10,7 +10,10 @@ public class Locator {
             public static By writeEmail = By.xpath("//input[@id='email']");
             public static By writePassword = By.xpath("//input[@id='pass']");
             public static By clickOnPrisijungti = By.xpath("//button[@id='send2']");
-            public static By paragraphCheckedValue = By.xpath("//h1[contains(text(),'Mano paskyra')]");
+            public static By paragraphCheckedValuePositive = By.xpath("//h1[contains(text()," +
+                    "'Mano paskyra')]");
+            public static By checkedValueNegative = By.xpath("//span[contains(text(),'Neteisingas" +
+                    " prisijungimo vardas arba slaptažodis.')]");
             public static By declineCookies = By.xpath("//button[@id='CybotCookiebotDialogBody" +
                     "ButtonDecline']");
         }
@@ -26,8 +29,7 @@ public class Locator {
                     "and @placeholder='Ieškoti']");
             public static By clickCheckBoxAlmaLittera = By.xpath("//input[@type='checkbox' " +
                     "and @value='33785']");
-            public static By readTextOfBooks = By.xpath("(//div[@class='col-md-2 page-counter " +
-                    "text-left pull-left'])[1]");
+            public static By readTextOfBooks = By.xpath("(//div[contains(text(),' Rasta: ')])[1]");
 
             public static By clickDeclineCookies = By.xpath("//button[@id='CybotCookiebotDialog" +
                     "BodyButtonDecline']");
@@ -57,8 +59,9 @@ public class Locator {
             public static By inputSearchBox = By.xpath("//input[@id='search']");
             public static By clickSearchBox = By.xpath("//button[@type='submit']");
             public static By clickOnBook = By.xpath("(//a[contains(text(),'Gyvulių ūkis')])[1]");
-            public static By clickINoriuSarasas = By.xpath("(//a[contains(text(),'Į norų sąrašą')])[2]");
-            public static By clickMessageNoruSarasas = By.xpath("(//a[contains(text(),'norų sąrašą')])[3]");
+            public static By clickINoruSarasas = By.xpath("(//a[contains(text(),'Į norų sąrašą')])[2]");
+            public static By clickMessageNoruSarasas = By.xpath("(//a[contains(text(),'norų sąrašą')])" +
+                    "[3]");
             public static By readTextOfBook = By.xpath("//a[contains(text(),'Gyvulių ūkis')]");
             public static By clickPasalinti = By.xpath("//a[contains(text(),'Pašalinti')]");
 

@@ -88,7 +88,7 @@ public class Common {
         return false;
     }
 
-    public static void acceptNoruSarasa() {
+    public static void acceptAlert() {
         Driver.getDriver().switchTo().alert().accept();
     }
 }

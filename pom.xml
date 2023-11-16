@@ -15,6 +15,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -38,7 +39,6 @@
             <artifactId>selenium-http-jdk-client</artifactId>
             <version>4.8.2</version>
         </dependency>
-
 
     </dependencies>
 

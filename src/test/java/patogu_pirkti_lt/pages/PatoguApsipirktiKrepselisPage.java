@@ -1,6 +1,5 @@
 package patogu_pirkti_lt.pages;
 
-import com.google.common.util.concurrent.ClosingFuture;
 
 public class PatoguApsipirktiKrepselisPage {
     public static void setChrome(String url) {

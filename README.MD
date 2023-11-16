@@ -35,7 +35,7 @@
        * Section "Leidyklos" in search box write "Alma littera"
        * Select "Alma littera"
 
-         Expected Result: Should be showing "Rasta: 14"
+         Expected Result: Should be showing "Rasta: 13"
 <br>
 
 4.  Add book to the shopping bag
@@ -77,7 +77,7 @@
        * Click button "Pasalinti"
        * Click on alert "OK"
 
-           Expected Result: Adding book in wishlist can read "Gyvulių ūkis""
+           Expected Result: Add book in wishlist should be "Gyvulių ūkis""
 
 
 

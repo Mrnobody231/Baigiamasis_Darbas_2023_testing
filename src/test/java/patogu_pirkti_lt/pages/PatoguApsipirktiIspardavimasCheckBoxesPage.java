@@ -15,7 +15,7 @@ public class PatoguApsipirktiIspardavimasCheckBoxesPage {
     }
 
     public static void clickCheckBoxTurimeSandelyje() throws InterruptedException {
-        Common.clickOnCheckBoxWhenAvailable(Locator.PatoguPirkti.Ispardavimas.clickCheckBoxTurimeSandelyje, 7);
+        Common.clickOnCheckBoxWhenAvailable(Locator.PatoguPirkti.Ispardavimas.clickCheckBoxTurimeSandelyje, 10);
 
     }
 

@@ -5,8 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import patogu_pirkti_lt.pages.PatoguApsipirktiIspardavimasCheckBoxesPage;
 
-import java.awt.*;
-
 public class PatoguApsipirktiIspardavimasCheckBoxesTest extends TestBase {
     @BeforeMethod
     @Override
